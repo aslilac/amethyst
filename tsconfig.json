@@ -1,12 +1,9 @@
 {
 	"extends": "@mckayla/tsconfig",
 	"compilerOptions": {
-		"outDir": "./target",
-		"types": ["jest"],
+		"outDir": "./build/",
 		"baseUrl": ".",
-		"paths": {
-			"@mckayla/materia": ["./src/main"]
-		}
+		"types": ["node"]
 	},
 	"include": ["./src/**/*"]
 }

@@ -1,4 +1,5 @@
-import { mapLength } from "@mckayla/materia";
+/// <reference types="jest" />
+import { mapLength } from "./array";
 
 /**
  * An alternative to `new Array(length).map`, since that doesn't actually work

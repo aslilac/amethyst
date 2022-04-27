@@ -1,4 +1,5 @@
-import { asyncThread, thread } from "@mckayla/materia";
+/// <reference types="jest" />
+import { asyncThread, thread } from "./thread";
 
 test("thread", async () => {
 	let i = 0;
