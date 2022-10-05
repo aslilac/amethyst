@@ -1,7 +1,7 @@
 {
 	"extends": ".",
 	"compilerOptions": {
-		"types": []
+		"types": ["node"]
 	},
 	"exclude": ["./**/*.test.*"]
 }

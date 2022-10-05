@@ -1,4 +1,3 @@
-/// <reference types="jest" />
 import { Observable } from "./Observable";
 import { RefPromise } from "./RefPromise";
 import { Signal } from "./Signal";
