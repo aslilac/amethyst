@@ -8,7 +8,7 @@ export class ReadableStreamIteratorReader<T> {
 			const { done, value } = await reader.read();
 			if (done) return;
 			yield value;
-		} while (true); // eslint-disable-line no-constant-condition
+		} while (true);
 	}
 
 	/*

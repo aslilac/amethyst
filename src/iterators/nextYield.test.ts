@@ -16,7 +16,7 @@ test("nextYield", () => {
 	expect(nextYield(foreverIterator)).toBe(x);
 
 	const echoIterator = echo();
-	expect(nextYield(echoIterator, 1)).toBe(undefined);
+	expect(nextYield(echoIterator, 1)).toBeUndefined();
 	expect(nextYield(echoIterator, 2)).toBe(2);
 	expect(nextYield(echoIterator, 3)).toBe(3);
 	expect(() => nextYield(echoIterator)).toThrow();

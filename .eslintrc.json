@@ -1,3 +1,6 @@
 {
-	"extends": ["mckayla"]
+	"extends": ["mckayla"],
+	"rules": {
+		"no-constant-condition": "off"
+	}
 }
