@@ -1,15 +1,15 @@
-import { df } from "./df";
+import { plainText } from "./plainText";
 
 export function clean(str: string) {
 	return (
 		str
 			.split("\n")
-			.map((line) => line.trim())
+			.map((line) => line.trimStart())
 			.filter(Boolean)
 			.join("\n") + "\n"
 	);
 }
 
-export function ct(chunks: TemplateStringsArray, ...intrp: unknown[]) {
-	return clean(df(chunks, ...intrp));
+export function undent(text: TemplateStringsArray, ...objects: unknown[]) {
+	return clean(plainText(text, ...objects));
 }

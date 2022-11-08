@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { Readable, Writable } from "stream";
 
 export class Reservoir {

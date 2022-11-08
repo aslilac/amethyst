@@ -1,16 +1,13 @@
 /// <reference types="jest" />
-import { ct } from "./clean";
+import { undent } from "./clean";
 
-test("ct", () => {
-	const withCt = ct`
+test("undent", () => {
+	const undented = undent`
 		August
 		Bandit
 		Dot
 		Mady
 		Toby
 	`;
-
-	const withoutCt = "August\nBandit\nDot\nMady\nToby\n";
-
-	expect(withCt).toBe(withoutCt);
+	expect(undented).toBe("August\nBandit\nDot\nMady\nToby\n");
 });

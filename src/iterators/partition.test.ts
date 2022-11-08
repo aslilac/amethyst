@@ -1,3 +1,4 @@
+/// <reference types="jest" />
 import { partition } from "./partition";
 
 test("partition", () => {

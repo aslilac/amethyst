@@ -7,12 +7,13 @@
 export function partition<T>(
 	iter: Iterable<T>,
 	predicate: (value: T) => boolean,
-): [Iterable<T>, Iterable<T>] {
+): [yes: Iterable<T>, no: Iterable<T>] {
 	const yes: T[] = [];
 	const no: T[] = [];
 
 	for (const value of iter) {
-		(predicate(value) ? yes : no).push(value);
+		const group = predicate(value) ? yes : no;
+		group.push(value);
 	}
 
 	return [yes, no];

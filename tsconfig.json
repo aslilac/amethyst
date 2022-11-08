@@ -2,8 +2,7 @@
 	"extends": "@mckayla/tsconfig",
 	"compilerOptions": {
 		"outDir": "./build/",
-		"baseUrl": ".",
-		"types": ["jest", "node"]
+		"baseUrl": "."
 	},
 	"include": ["./src/**/*"]
 }

@@ -1,8 +1,5 @@
-module.exports = {
+export default {
 	preset: "ts-jest",
 	testEnvironment: "node",
-	testPathIgnorePatterns: ["<rootDir>/target/"],
-	moduleNameMapper: {
-		"^@mckayla/materia$": "<rootDir>/src/main.ts",
-	},
+	testPathIgnorePatterns: ["<rootDir>/build/"],
 };
