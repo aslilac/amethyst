@@ -4,4 +4,4 @@ export default {
 	test: {
 		globals: true,
 	},
-} satisfies UserConfig;
+} as UserConfig; // TODO: use `satisfies`
