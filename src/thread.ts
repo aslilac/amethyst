@@ -1,3 +1,5 @@
+/* eslint-disable no-constant-condition */
+
 /**
  * Runs a Generator until it's exhausted
  */

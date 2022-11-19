@@ -5,7 +5,7 @@ export class IteratorSource<T> implements UnderlyingSource<T> {
 		this.iter = items[Symbol.iterator]();
 	}
 
-	pull(controller: ReadableStreamDefaultController<T>) {
+	pull(controller: ReadableStreamController<T>) {
 		const next = this.iter.next();
 
 		if (next.done) {

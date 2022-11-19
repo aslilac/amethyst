@@ -1,3 +1,3 @@
-export * from "./enqueue";
-export * from "./IteratorSource";
-export * from "./ReadableStreamIteratorReader";
+export * from "./enqueue.js";
+export * from "./IteratorSource.js";
+export * from "./ReadableStreamIteratorReader.js";

@@ -1,4 +1,4 @@
-import { plainText } from "./plainText";
+import { plainText } from "./plainText.js";
 
 export function clean(str: string) {
 	return (

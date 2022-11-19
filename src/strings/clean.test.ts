@@ -1,5 +1,5 @@
-/// <reference types="jest" />
-import { undent } from "./clean";
+/// <reference types="vitest/globals" />
+import { undent } from "./clean.js";
 
 test("undent", () => {
 	const undented = undent`

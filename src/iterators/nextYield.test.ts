@@ -1,6 +1,6 @@
-/// <reference types="jest" />
-import { forever } from "./forever";
-import { nextYield } from "./nextYield";
+/// <reference types="vitest/globals" />
+import { forever } from "./forever.js";
+import { nextYield } from "./nextYield.js";
 
 function* echo<T>(): Generator<T | undefined, void, T | undefined> {
 	let value: T | undefined;

@@ -1,6 +1,7 @@
 {
 	"extends": "@mckayla/tsconfig",
 	"compilerOptions": {
+		"moduleResolution": "nodenext",
 		"outDir": "./build/",
 		"baseUrl": "."
 	},

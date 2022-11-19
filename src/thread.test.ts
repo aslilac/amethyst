@@ -1,5 +1,5 @@
-/// <reference types="jest" />
-import { asyncThread, thread } from "./thread";
+/// <reference types="vitest/globals" />
+import { asyncThread, thread } from "./thread.js";
 
 test("thread", () => {
 	let i = 0;

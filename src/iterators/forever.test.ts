@@ -1,5 +1,5 @@
-/// <reference types="jest" />
-import { forever } from "./forever";
+/// <reference types="vitest/globals" />
+import { forever } from "./forever.js";
 
 test("forever", () => {
 	const x = {};
